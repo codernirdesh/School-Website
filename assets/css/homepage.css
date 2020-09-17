@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body .main-page {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: "topbar" "header-image" "navbar" "main" "footer";
+  /*
+        ==> Hero Image of School. For visual hierarchy
+        ==> it should be of dark color
+        */
+}
+
+body .main-page .topbar {
+  height: 100%;
+  width: 100%;
+  background-color: #242425;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: topbar;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0px;
+  -webkit-box-shadow: 0px 18px 9px 0px rgba(255, 0, 0, 0.37);
+          box-shadow: 0px 18px 9px 0px rgba(255, 0, 0, 0.37);
+}
+
+body .main-page .topbar .wrapper {
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .main-page .topbar .wrapper .container-contact {
+  margin: 3px;
+  display: inline-block;
+  color: #ffffff;
+}
+
+body .main-page .topbar .wrapper .container-contact .topbar-content {
+  display: inline-block;
+  font-size: 14px;
+  padding: 5px;
+}
+
+body .main-page .topbar .wrapper .container-contact .topbar-content :nth-last-child() {
+  padding-right: 0px;
+}
+
+body .main-page .topbar .wrapper .container-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: #ffffff;
+}
+
+body .main-page .topbar .wrapper .container-links .topbar-content-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 14px;
+  font-weight: 900;
+  padding: 0 8px;
+}
+
+body .main-page .topbar .wrapper .container-links .topbar-content-link a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .main-page .topbar .wrapper .container-links .topbar-content-link a img {
+  width: 25px;
+}
+
+body .main-page .topbar .wrapper .container-links .topbar-content-link :nth-last-child() {
+  padding-right: 20px;
+}
+
+body .main-page .topbar .wrapper .container-links .topbar-content-link :hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+body .main-page .header-image {
+  height: 100%;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: header-image;
+  background-color: #2c2c2e;
+  border-bottom-style: solid;
+  border-bottom: 1px white;
+}
+
+body .main-page .header-image .layer-one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 0;
+  color: #f5f5f8;
+}
+
+body .main-page .header-image .layer-one .slogan {
+  font-style: italic;
+  font-size: 17px;
+  line-height: 1.4;
+  text-shadow: 2px 2px 3px rgba(66, 66, 66, 0.5);
+}
+
+body .main-page .header-image .layer-one .name {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 1.4;
+  text-shadow: 2px 2px 3px rgba(66, 66, 66, 0.5);
+}
+
+body .main-page .header-image .layer-one .address {
+  font-size: 20px;
+  line-height: 1.4;
+  text-shadow: 2px 2px 3px rgba(66, 66, 66, 0.5);
+}
+
+body .main-page .header-image .layer-one .estd {
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1.4;
+  text-shadow: 2px 2px 3px rgba(66, 66, 66, 0.5);
+}
+
+body .main-page .navbar {
+  background-color: #252525;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: navbar;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .main-page .navbar ul {
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body .main-page .navbar ul li {
+  display: inline-block;
+  padding: 10px 0;
+}
+
+body .main-page .navbar ul li a {
+  padding: 11px 13px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  text-shadow: 2px 2px 3px rgba(66, 66, 66, 0.5);
+}
+
+body .main-page .navbar ul li:last-child {
+  display: inline-block;
+  padding: 10px 0;
+  background-color: #be1212;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+body .main-page .navbar ul li:last-child a {
+  padding: 11px 13px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+body .main-page .navbar ul li:last-child :hover {
+  background-color: #161647;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  color: #fff;
+}
+
+body .main-page .navbar ul li :hover {
+  background-color: #fff;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  color: #242425;
+  text-shadow: none;
+}
+
+body .main-page .main {
+  height: 25px;
+  background-color: yellow;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: main;
+}
+
+body .main-page .footer {
+  height: 25px;
+  background-color: red;
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: footer;
+}
+/*# sourceMappingURL=homepage.css.map */
